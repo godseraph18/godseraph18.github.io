@@ -1,0 +1,73 @@
+body {
+    font-family: Times, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.resume {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #000;
+    transition: background-color 0.5s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    max-width: 60%;
+}
+
+.photo img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+
+h1, h2 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+p {
+    margin: 5px 0;
+}
+
+hr {
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.academic p {
+    margin: 40px 0;
+}
+
+.skills p {
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 20px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #577fa9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #577fa9;
+}
