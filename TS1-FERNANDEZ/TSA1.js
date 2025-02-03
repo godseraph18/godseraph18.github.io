@@ -1,4 +1,4 @@
-let colorToggle = false;
+let colorToggle = true;
 
 function changeColor() {
     const resume = document.getElementById('resume');
