@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3ddac;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.produced-by {
+    font-style: italic;
+    color: #666;
+}
+
+
+.restaurant-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 auto;
+}
+
+
+.restaurant-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-front img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-front h3 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-back {
+    background: #267f02;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.restaurant-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.restaurant-card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+
+#detailScreen {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#detailScreen.hidden {
+    display: none;
+}
+
+#backButton {
+    background: #267f02;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+.restaurant-detail {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.restaurant-detail img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.restaurant-detail {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.restaurant-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+}
